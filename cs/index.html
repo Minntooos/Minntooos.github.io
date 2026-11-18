@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Join Rise of Nations CS 1.6</title>
+<meta property="og:title" content="Rise of Nations · CS 1.6"><meta property="og:description" content="Click to join the server">
+<style>
+:root{--bg:#f4f1ec;--card:#fff;--text:#1d1b19;--muted:#6b665f;--acc:#e8901a;--code:#efebe4}
+@media (prefers-color-scheme:dark){:root{--bg:#141210;--card:#1e1b18;--text:#f2ede6;--muted:#a39c92;--code:#2a2622}}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,sans-serif;padding:16px}
+.c{background:var(--card);max-width:440px;width:100%;padding:28px;border-radius:14px;box-shadow:0 6px 30px #0002;text-align:center}
+h1{margin:0 0 4px;font-size:22px}p{color:var(--muted);margin:6px 0 18px}
+a.b,button{display:block;width:100%;padding:12px;border:0;border-radius:9px;font:600 16px system-ui;cursor:pointer;text-decoration:none;margin-top:10px}
+a.b{background:var(--acc);color:#1d1b19}button{background:var(--code);color:var(--text)}
+code{display:block;background:var(--code);padding:10px;border-radius:8px;font-size:15px;user-select:all;margin-top:14px}
+small{display:block;color:var(--muted);margin-top:14px;font-size:13px}
+</style></head><body><div class="c">
+<h1>🎯 Rise of Nations · CS 1.6</h1>
+<p>Opening Counter-Strike and joining the server…</p>
+<a class="b" id="go" href="steam://connect/84.235.235.12:27015">▶ Join now (Steam)</a>
+<code id="cmd">connect rise-of-nations.me:27015</code>
+<button id="cp">📋 Copy connect command</button>
+<small>Nothing happened? You're probably on non-Steam CS: open the game, press <b>~</b>, paste the command and press Enter.</small>
+</div><script>
+setTimeout(function(){location.href="steam://connect/84.235.235.12:27015"},300);
+document.getElementById("cp").onclick=function(){var b=this;try{navigator.clipboard.writeText(document.getElementById("cmd").textContent).then(function(){b.textContent="✅ Copied"})}catch(e){}};
+</script></body></html>
